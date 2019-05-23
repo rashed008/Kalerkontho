@@ -1,0 +1,6 @@
+framework module Pods_KalerKanthoTests {
+  umbrella header "Pods-KalerKanthoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

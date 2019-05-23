@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		040FBE701D6479A100825774 /* KKRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040FBE6F1D6479A100825774 /* KKRequestManager.swift */; };
+		0457ED831D6571BE00E05576 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED821D6571BE00E05576 /* HomeVC.swift */; };
+		0457ED8B1D6572C800E05576 /* AKAttributeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED851D6572C800E05576 /* AKAttributeKit.swift */; };
+		0457ED8C1D6572C800E05576 /* String+AKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED861D6572C800E05576 /* String+AKExtension.swift */; };
+		0457ED8D1D6572C800E05576 /* UIColor+AKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED871D6572C800E05576 /* UIColor+AKExtension.swift */; };
+		0457ED8E1D6572C800E05576 /* UIFont+AKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED881D6572C800E05576 /* UIFont+AKExtension.swift */; };
+		0457ED8F1D6572C800E05576 /* CALayer+UIcolorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED891D6572C800E05576 /* CALayer+UIcolorExtension.m */; };
+		0457ED911D65732200E05576 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED901D65732200E05576 /* AppConstant.swift */; };
+		0457ED931D657DA900E05576 /* MenuSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED921D657DA900E05576 /* MenuSectionHeader.swift */; };
+		0457ED951D657DC300E05576 /* MenuSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0457ED941D657DC300E05576 /* MenuSectionHeader.xib */; };
+		0457ED971D6589A800E05576 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED961D6589A800E05576 /* MenuModel.swift */; };
+		0457ED991D6596B500E05576 /* KKSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED981D6596B500E05576 /* KKSessionManager.swift */; };
+		0457EDA91D65A01400E05576 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED9C1D65A01400E05576 /* FromJSON.swift */; };
+		0457EDAA1D65A01400E05576 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED9D1D65A01400E05576 /* Mapper.swift */; };
+		0457EDAB1D65A01400E05576 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED9E1D65A01400E05576 /* Operators.swift */; };
+		0457EDAC1D65A01400E05576 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457ED9F1D65A01400E05576 /* ToJSON.swift */; };
+		0457EDAD1D65A01400E05576 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EDA11D65A01400E05576 /* CustomDateFormatTransform.swift */; };
+		0457EDAE1D65A01400E05576 /* DateFormaterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EDA21D65A01400E05576 /* DateFormaterTransform.swift */; };
+		0457EDAF1D65A01400E05576 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EDA31D65A01400E05576 /* DateTransform.swift */; };
+		0457EDB01D65A01400E05576 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EDA41D65A01400E05576 /* EnumTransform.swift */; };
+		0457EDB11D65A01400E05576 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EDA51D65A01400E05576 /* ISO8601DateTransform.swift */; };
+		0457EDB21D65A01400E05576 /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EDA61D65A01400E05576 /* TransformOf.swift */; };
+		0457EDB31D65A01400E05576 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EDA71D65A01400E05576 /* TransformType.swift */; };
+		0457EDB41D65A01400E05576 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457EDA81D65A01400E05576 /* URLTransform.swift */; };
+		046B2FC61D643248003877AC /* KalerKanthoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B2FC51D643248003877AC /* KalerKanthoTests.swift */; };
+		046B2FD11D643248003877AC /* KalerKanthoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B2FD01D643248003877AC /* KalerKanthoUITests.swift */; };
+		046B2FE01D643287003877AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B2FDF1D643287003877AC /* AppDelegate.swift */; };
+		046B2FE71D6432CB003877AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046B2FE21D6432CB003877AC /* Assets.xcassets */; };
+		046B2FE81D6432CB003877AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B2FE31D6432CB003877AC /* Main.storyboard */; };
+		046B2FE91D6432CB003877AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B2FE51D6432CB003877AC /* LaunchScreen.storyboard */; };
+		046B2FFB1D643DEB003877AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B2FFA1D643DEB003877AC /* BaseViewController.swift */; };
+		046B2FFD1D643DF9003877AC /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B2FFC1D643DF9003877AC /* MenuVC.swift */; };
+		046B30001D644159003877AC /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B2FFE1D644159003877AC /* MenuTableCell.swift */; };
+		046B30011D644159003877AC /* MenuTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046B2FFF1D644159003877AC /* MenuTableCell.xib */; };
+		046B30091D64566F003877AC /* KKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B30071D64566F003877AC /* KKNavigationController.swift */; };
+		046B300A1D64566F003877AC /* KKNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046B30081D64566F003877AC /* KKNavigationController.xib */; };
+		046B300C1D6459A8003877AC /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046B300B1D6459A8003877AC /* CustomNavView.swift */; };
+		04E6A91D1D6988BF00F6B2BD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E6A91C1D6988BF00F6B2BD /* SwiftyJSON.swift */; };
+		7D62A420BD089FE7F640B1C1 /* Pods_KalerKanthoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601012EBB905D4A325851278 /* Pods_KalerKanthoTests.framework */; };
+		DAC69B29359B798D4DDB7B7C /* Pods_KalerKantho.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E52740C0104AE06050FE0AB /* Pods_KalerKantho.framework */; };
+		E5D5F1BA2E8E7B539766C7F1 /* Pods_KalerKanthoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1692C02FCE3ADFFE7CFAC957 /* Pods_KalerKanthoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		046B2FC21D643248003877AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046B2FA51D643248003877AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046B2FAC1D643248003877AC;
+			remoteInfo = KalerKantho;
+		};
+		046B2FCD1D643248003877AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 046B2FA51D643248003877AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 046B2FAC1D643248003877AC;
+			remoteInfo = KalerKantho;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040FBE6F1D6479A100825774 /* KKRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKRequestManager.swift; sourceTree = "<group>"; };
+		0457ED821D6571BE00E05576 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0457ED851D6572C800E05576 /* AKAttributeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKAttributeKit.swift; sourceTree = "<group>"; };
+		0457ED861D6572C800E05576 /* String+AKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+AKExtension.swift"; sourceTree = "<group>"; };
+		0457ED871D6572C800E05576 /* UIColor+AKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+AKExtension.swift"; sourceTree = "<group>"; };
+		0457ED881D6572C800E05576 /* UIFont+AKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+AKExtension.swift"; sourceTree = "<group>"; };
+		0457ED891D6572C800E05576 /* CALayer+UIcolorExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+UIcolorExtension.m"; sourceTree = "<group>"; };
+		0457ED8A1D6572C800E05576 /* CALayer+UIcolorExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+UIcolorExtension.h"; sourceTree = "<group>"; };
+		0457ED901D65732200E05576 /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		0457ED921D657DA900E05576 /* MenuSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSectionHeader.swift; sourceTree = "<group>"; };
+		0457ED941D657DC300E05576 /* MenuSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuSectionHeader.xib; sourceTree = "<group>"; };
+		0457ED961D6589A800E05576 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		0457ED981D6596B500E05576 /* KKSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKSessionManager.swift; sourceTree = "<group>"; };
+		0457ED9C1D65A01400E05576 /* FromJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromJSON.swift; sourceTree = "<group>"; };
+		0457ED9D1D65A01400E05576 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		0457ED9E1D65A01400E05576 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		0457ED9F1D65A01400E05576 /* ToJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToJSON.swift; sourceTree = "<group>"; };
+		0457EDA11D65A01400E05576 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		0457EDA21D65A01400E05576 /* DateFormaterTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormaterTransform.swift; sourceTree = "<group>"; };
+		0457EDA31D65A01400E05576 /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
+		0457EDA41D65A01400E05576 /* EnumTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumTransform.swift; sourceTree = "<group>"; };
+		0457EDA51D65A01400E05576 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		0457EDA61D65A01400E05576 /* TransformOf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOf.swift; sourceTree = "<group>"; };
+		0457EDA71D65A01400E05576 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
+		0457EDA81D65A01400E05576 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		046B2FAD1D643248003877AC /* KalerKantho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalerKantho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046B2FC11D643248003877AC /* KalerKanthoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalerKanthoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046B2FC51D643248003877AC /* KalerKanthoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalerKanthoTests.swift; sourceTree = "<group>"; };
+		046B2FC71D643248003877AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046B2FCC1D643248003877AC /* KalerKanthoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalerKanthoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		046B2FD01D643248003877AC /* KalerKanthoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalerKanthoUITests.swift; sourceTree = "<group>"; };
+		046B2FD21D643248003877AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046B2FDF1D643287003877AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		046B2FE21D6432CB003877AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		046B2FE41D6432CB003877AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		046B2FE61D6432CB003877AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		046B2FED1D64333D003877AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046B2FFA1D643DEB003877AC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		046B2FFC1D643DF9003877AC /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		046B2FFE1D644159003877AC /* MenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
+		046B2FFF1D644159003877AC /* MenuTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableCell.xib; sourceTree = "<group>"; };
+		046B30071D64566F003877AC /* KKNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KKNavigationController.swift; sourceTree = "<group>"; };
+		046B30081D64566F003877AC /* KKNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKNavigationController.xib; sourceTree = "<group>"; };
+		046B300B1D6459A8003877AC /* CustomNavView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
+		04E6A91B1D6988BF00F6B2BD /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		04E6A91C1D6988BF00F6B2BD /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		158C732C4BEB011F9806ED55 /* Pods-KalerKanthoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalerKanthoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalerKanthoUITests/Pods-KalerKanthoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1692C02FCE3ADFFE7CFAC957 /* Pods_KalerKanthoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalerKanthoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2A2DC8B01E34356E1FB190 /* Pods-KalerKanthoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalerKanthoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalerKanthoTests/Pods-KalerKanthoTests.release.xcconfig"; sourceTree = "<group>"; };
+		601012EBB905D4A325851278 /* Pods_KalerKanthoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalerKanthoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D0DD3C4DAAE4F5CCA1470C /* Pods-KalerKanthoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalerKanthoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KalerKanthoTests/Pods-KalerKanthoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E52740C0104AE06050FE0AB /* Pods_KalerKantho.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KalerKantho.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6DFB2FEEFC094A6DB515ABF /* Pods-KalerKanthoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalerKanthoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KalerKanthoUITests/Pods-KalerKanthoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0370CA2E456F49C2A153079 /* Pods-KalerKantho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalerKantho.release.xcconfig"; path = "Pods/Target Support Files/Pods-KalerKantho/Pods-KalerKantho.release.xcconfig"; sourceTree = "<group>"; };
+		EC044716E0D5F74AD9EB557E /* Pods-KalerKantho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KalerKantho.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KalerKantho/Pods-KalerKantho.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		046B2FAA1D643248003877AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC69B29359B798D4DDB7B7C /* Pods_KalerKantho.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B2FBE1D643248003877AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D62A420BD089FE7F640B1C1 /* Pods_KalerKanthoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B2FC91D643248003877AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5D5F1BA2E8E7B539766C7F1 /* Pods_KalerKanthoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0457ED841D6572C800E05576 /* AshKit */ = {
+			isa = PBXGroup;
+			children = (
+				0457ED851D6572C800E05576 /* AKAttributeKit.swift */,
+				0457ED861D6572C800E05576 /* String+AKExtension.swift */,
+				0457ED871D6572C800E05576 /* UIColor+AKExtension.swift */,
+				0457ED881D6572C800E05576 /* UIFont+AKExtension.swift */,
+				0457ED891D6572C800E05576 /* CALayer+UIcolorExtension.m */,
+				0457ED8A1D6572C800E05576 /* CALayer+UIcolorExtension.h */,
+			);
+			path = AshKit;
+			sourceTree = "<group>";
+		};
+		0457ED9A1D65A01400E05576 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				0457ED9B1D65A01400E05576 /* Core */,
+				0457EDA01D65A01400E05576 /* Transforms */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		0457ED9B1D65A01400E05576 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0457ED9C1D65A01400E05576 /* FromJSON.swift */,
+				0457ED9D1D65A01400E05576 /* Mapper.swift */,
+				0457ED9E1D65A01400E05576 /* Operators.swift */,
+				0457ED9F1D65A01400E05576 /* ToJSON.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0457EDA01D65A01400E05576 /* Transforms */ = {
+			isa = PBXGroup;
+			children = (
+				0457EDA11D65A01400E05576 /* CustomDateFormatTransform.swift */,
+				0457EDA21D65A01400E05576 /* DateFormaterTransform.swift */,
+				0457EDA31D65A01400E05576 /* DateTransform.swift */,
+				0457EDA41D65A01400E05576 /* EnumTransform.swift */,
+				0457EDA51D65A01400E05576 /* ISO8601DateTransform.swift */,
+				0457EDA61D65A01400E05576 /* TransformOf.swift */,
+				0457EDA71D65A01400E05576 /* TransformType.swift */,
+				0457EDA81D65A01400E05576 /* URLTransform.swift */,
+			);
+			path = Transforms;
+			sourceTree = "<group>";
+		};
+		046B2FA41D643248003877AC = {
+			isa = PBXGroup;
+			children = (
+				046B2FAF1D643248003877AC /* KalerKantho */,
+				046B2FC41D643248003877AC /* KalerKanthoTests */,
+				046B2FCF1D643248003877AC /* KalerKanthoUITests */,
+				046B2FAE1D643248003877AC /* Products */,
+				CAFF8B6DFDCBD007FC5AACFB /* Pods */,
+				A136E2FC3B7B65ACDA700FC4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		046B2FAE1D643248003877AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FAD1D643248003877AC /* KalerKantho.app */,
+				046B2FC11D643248003877AC /* KalerKanthoTests.xctest */,
+				046B2FCC1D643248003877AC /* KalerKanthoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		046B2FAF1D643248003877AC /* KalerKantho */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FDE1D643287003877AC /* AppDelegate */,
+				046B2FE11D6432CB003877AC /* Resources */,
+				046B2FEA1D643320003877AC /* ViewControllers */,
+				046B2FF51D6434DA003877AC /* Models */,
+				046B2FF61D643517003877AC /* CustomViews */,
+				046B2FF21D6434AF003877AC /* Library */,
+				046B2FF31D6434AF003877AC /* Managers */,
+			);
+			path = KalerKantho;
+			sourceTree = "<group>";
+		};
+		046B2FC41D643248003877AC /* KalerKanthoTests */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FC51D643248003877AC /* KalerKanthoTests.swift */,
+				046B2FC71D643248003877AC /* Info.plist */,
+			);
+			path = KalerKanthoTests;
+			sourceTree = "<group>";
+		};
+		046B2FCF1D643248003877AC /* KalerKanthoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FD01D643248003877AC /* KalerKanthoUITests.swift */,
+				046B2FD21D643248003877AC /* Info.plist */,
+			);
+			path = KalerKanthoUITests;
+			sourceTree = "<group>";
+		};
+		046B2FDE1D643287003877AC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FDF1D643287003877AC /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		046B2FE11D6432CB003877AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FED1D64333D003877AC /* Info.plist */,
+				046B2FE21D6432CB003877AC /* Assets.xcassets */,
+				046B2FE31D6432CB003877AC /* Main.storyboard */,
+				046B2FE51D6432CB003877AC /* LaunchScreen.storyboard */,
+				0457ED901D65732200E05576 /* AppConstant.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		046B2FEA1D643320003877AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FFA1D643DEB003877AC /* BaseViewController.swift */,
+				046B2FEF1D64343A003877AC /* AppVCs */,
+				046B2FF41D6434BA003877AC /* AuthVCs */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		046B2FEF1D64343A003877AC /* AppVCs */ = {
+			isa = PBXGroup;
+			children = (
+				0457ED821D6571BE00E05576 /* HomeVC.swift */,
+				046B2FFC1D643DF9003877AC /* MenuVC.swift */,
+			);
+			path = AppVCs;
+			sourceTree = "<group>";
+		};
+		046B2FF21D6434AF003877AC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				04E6A91A1D6988BF00F6B2BD /* SwiftyJson */,
+				0457ED9A1D65A01400E05576 /* ObjectMapper */,
+				0457ED841D6572C800E05576 /* AshKit */,
+				046B30021D6452DB003877AC /* KKNavigationBar */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		046B2FF31D6434AF003877AC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				040FBE6F1D6479A100825774 /* KKRequestManager.swift */,
+				0457ED981D6596B500E05576 /* KKSessionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		046B2FF41D6434BA003877AC /* AuthVCs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AuthVCs;
+			sourceTree = "<group>";
+		};
+		046B2FF51D6434DA003877AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0457ED961D6589A800E05576 /* MenuModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		046B2FF61D643517003877AC /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FF71D643517003877AC /* TableCells */,
+				046B2FF81D643517003877AC /* TableHeaders */,
+				046B2FF91D643517003877AC /* Views */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		046B2FF71D643517003877AC /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				046B2FFE1D644159003877AC /* MenuTableCell.swift */,
+				046B2FFF1D644159003877AC /* MenuTableCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		046B2FF81D643517003877AC /* TableHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				0457ED921D657DA900E05576 /* MenuSectionHeader.swift */,
+				0457ED941D657DC300E05576 /* MenuSectionHeader.xib */,
+			);
+			path = TableHeaders;
+			sourceTree = "<group>";
+		};
+		046B2FF91D643517003877AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				046B300B1D6459A8003877AC /* CustomNavView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		046B30021D6452DB003877AC /* KKNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				046B30071D64566F003877AC /* KKNavigationController.swift */,
+				046B30081D64566F003877AC /* KKNavigationController.xib */,
+			);
+			path = KKNavigationBar;
+			sourceTree = "<group>";
+		};
+		04E6A91A1D6988BF00F6B2BD /* SwiftyJson */ = {
+			isa = PBXGroup;
+			children = (
+				04E6A91B1D6988BF00F6B2BD /* SwiftyJSON.h */,
+				04E6A91C1D6988BF00F6B2BD /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJson;
+			sourceTree = "<group>";
+		};
+		A136E2FC3B7B65ACDA700FC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E52740C0104AE06050FE0AB /* Pods_KalerKantho.framework */,
+				601012EBB905D4A325851278 /* Pods_KalerKanthoTests.framework */,
+				1692C02FCE3ADFFE7CFAC957 /* Pods_KalerKanthoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAFF8B6DFDCBD007FC5AACFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC044716E0D5F74AD9EB557E /* Pods-KalerKantho.debug.xcconfig */,
+				E0370CA2E456F49C2A153079 /* Pods-KalerKantho.release.xcconfig */,
+				63D0DD3C4DAAE4F5CCA1470C /* Pods-KalerKanthoTests.debug.xcconfig */,
+				1A2A2DC8B01E34356E1FB190 /* Pods-KalerKanthoTests.release.xcconfig */,
+				C6DFB2FEEFC094A6DB515ABF /* Pods-KalerKanthoUITests.debug.xcconfig */,
+				158C732C4BEB011F9806ED55 /* Pods-KalerKanthoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		046B2FAC1D643248003877AC /* KalerKantho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046B2FD51D643248003877AC /* Build configuration list for PBXNativeTarget "KalerKantho" */;
+			buildPhases = (
+				00A857C9F1B23CFBA058132C /* 📦 Check Pods Manifest.lock */,
+				046B2FA91D643248003877AC /* Sources */,
+				046B2FAA1D643248003877AC /* Frameworks */,
+				046B2FAB1D643248003877AC /* Resources */,
+				8C209F16131BA1227D7B53BC /* 📦 Embed Pods Frameworks */,
+				E25F3857CB0D243F6A195B43 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KalerKantho;
+			productName = KalerKantho;
+			productReference = 046B2FAD1D643248003877AC /* KalerKantho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		046B2FC01D643248003877AC /* KalerKanthoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046B2FD81D643248003877AC /* Build configuration list for PBXNativeTarget "KalerKanthoTests" */;
+			buildPhases = (
+				A5B297D8B08DDE9607B8DB69 /* 📦 Check Pods Manifest.lock */,
+				046B2FBD1D643248003877AC /* Sources */,
+				046B2FBE1D643248003877AC /* Frameworks */,
+				046B2FBF1D643248003877AC /* Resources */,
+				C35E220E8508BE6F5DDDC22F /* 📦 Embed Pods Frameworks */,
+				68D71BC5C19088AB2476D4C2 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046B2FC31D643248003877AC /* PBXTargetDependency */,
+			);
+			name = KalerKanthoTests;
+			productName = KalerKanthoTests;
+			productReference = 046B2FC11D643248003877AC /* KalerKanthoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		046B2FCB1D643248003877AC /* KalerKanthoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 046B2FDB1D643248003877AC /* Build configuration list for PBXNativeTarget "KalerKanthoUITests" */;
+			buildPhases = (
+				F03DA7291EAB4C144F4841D0 /* 📦 Check Pods Manifest.lock */,
+				046B2FC81D643248003877AC /* Sources */,
+				046B2FC91D643248003877AC /* Frameworks */,
+				046B2FCA1D643248003877AC /* Resources */,
+				0274FC8C5D97D84FB42514C1 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046B2FCE1D643248003877AC /* PBXTargetDependency */,
+			);
+			name = KalerKanthoUITests;
+			productName = KalerKanthoUITests;
+			productReference = 046B2FCC1D643248003877AC /* KalerKanthoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		046B2FA51D643248003877AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AAPBD;
+				TargetAttributes = {
+					046B2FAC1D643248003877AC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					046B2FC01D643248003877AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 046B2FAC1D643248003877AC;
+					};
+					046B2FCB1D643248003877AC = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 046B2FAC1D643248003877AC;
+					};
+				};
+			};
+			buildConfigurationList = 046B2FA81D643248003877AC /* Build configuration list for PBXProject "KalerKantho" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 046B2FA41D643248003877AC;
+			productRefGroup = 046B2FAE1D643248003877AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				046B2FAC1D643248003877AC /* KalerKantho */,
+				046B2FC01D643248003877AC /* KalerKanthoTests */,
+				046B2FCB1D643248003877AC /* KalerKanthoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		046B2FAB1D643248003877AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046B2FE91D6432CB003877AC /* LaunchScreen.storyboard in Resources */,
+				0457ED951D657DC300E05576 /* MenuSectionHeader.xib in Resources */,
+				046B300A1D64566F003877AC /* KKNavigationController.xib in Resources */,
+				046B2FE71D6432CB003877AC /* Assets.xcassets in Resources */,
+				046B2FE81D6432CB003877AC /* Main.storyboard in Resources */,
+				046B30011D644159003877AC /* MenuTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B2FBF1D643248003877AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B2FCA1D643248003877AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00A857C9F1B23CFBA058132C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0274FC8C5D97D84FB42514C1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalerKanthoUITests/Pods-KalerKanthoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68D71BC5C19088AB2476D4C2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalerKanthoTests/Pods-KalerKanthoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C209F16131BA1227D7B53BC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalerKantho/Pods-KalerKantho-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5B297D8B08DDE9607B8DB69 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C35E220E8508BE6F5DDDC22F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalerKanthoTests/Pods-KalerKanthoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25F3857CB0D243F6A195B43 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KalerKantho/Pods-KalerKantho-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F03DA7291EAB4C144F4841D0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046B2FA91D643248003877AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0457ED971D6589A800E05576 /* MenuModel.swift in Sources */,
+				0457EDB11D65A01400E05576 /* ISO8601DateTransform.swift in Sources */,
+				0457EDAB1D65A01400E05576 /* Operators.swift in Sources */,
+				04E6A91D1D6988BF00F6B2BD /* SwiftyJSON.swift in Sources */,
+				0457EDB21D65A01400E05576 /* TransformOf.swift in Sources */,
+				0457EDAE1D65A01400E05576 /* DateFormaterTransform.swift in Sources */,
+				0457EDAD1D65A01400E05576 /* CustomDateFormatTransform.swift in Sources */,
+				046B2FE01D643287003877AC /* AppDelegate.swift in Sources */,
+				0457EDB01D65A01400E05576 /* EnumTransform.swift in Sources */,
+				0457ED8B1D6572C800E05576 /* AKAttributeKit.swift in Sources */,
+				0457ED8C1D6572C800E05576 /* String+AKExtension.swift in Sources */,
+				0457ED8F1D6572C800E05576 /* CALayer+UIcolorExtension.m in Sources */,
+				0457EDAF1D65A01400E05576 /* DateTransform.swift in Sources */,
+				0457ED8D1D6572C800E05576 /* UIColor+AKExtension.swift in Sources */,
+				0457ED831D6571BE00E05576 /* HomeVC.swift in Sources */,
+				046B30091D64566F003877AC /* KKNavigationController.swift in Sources */,
+				040FBE701D6479A100825774 /* KKRequestManager.swift in Sources */,
+				046B2FFB1D643DEB003877AC /* BaseViewController.swift in Sources */,
+				0457EDAC1D65A01400E05576 /* ToJSON.swift in Sources */,
+				0457ED991D6596B500E05576 /* KKSessionManager.swift in Sources */,
+				0457EDA91D65A01400E05576 /* FromJSON.swift in Sources */,
+				0457ED911D65732200E05576 /* AppConstant.swift in Sources */,
+				0457ED8E1D6572C800E05576 /* UIFont+AKExtension.swift in Sources */,
+				0457EDB41D65A01400E05576 /* URLTransform.swift in Sources */,
+				046B30001D644159003877AC /* MenuTableCell.swift in Sources */,
+				046B2FFD1D643DF9003877AC /* MenuVC.swift in Sources */,
+				0457EDB31D65A01400E05576 /* TransformType.swift in Sources */,
+				0457ED931D657DA900E05576 /* MenuSectionHeader.swift in Sources */,
+				046B300C1D6459A8003877AC /* CustomNavView.swift in Sources */,
+				0457EDAA1D65A01400E05576 /* Mapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B2FBD1D643248003877AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046B2FC61D643248003877AC /* KalerKanthoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		046B2FC81D643248003877AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046B2FD11D643248003877AC /* KalerKanthoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		046B2FC31D643248003877AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046B2FAC1D643248003877AC /* KalerKantho */;
+			targetProxy = 046B2FC21D643248003877AC /* PBXContainerItemProxy */;
+		};
+		046B2FCE1D643248003877AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 046B2FAC1D643248003877AC /* KalerKantho */;
+			targetProxy = 046B2FCD1D643248003877AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		046B2FE31D6432CB003877AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046B2FE41D6432CB003877AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		046B2FE51D6432CB003877AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046B2FE61D6432CB003877AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		046B2FD31D643248003877AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shafiul Biplob (YFQ2XML63B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shafiul Biplob (YFQ2XML63B)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "189f674d-f673-459b-ba92-d322899e9e0f";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		046B2FD41D643248003877AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shafiul Biplob (YFQ2XML63B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shafiul Biplob (YFQ2XML63B)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "189f674d-f673-459b-ba92-d322899e9e0f";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		046B2FD61D643248003877AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC044716E0D5F74AD9EB557E /* Pods-KalerKantho.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shafiul Biplob (YFQ2XML63B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shafiul Biplob (YFQ2XML63B)";
+				INFOPLIST_FILE = KalerKantho/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aapbd.KalerKantho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "189f674d-f673-459b-ba92-d322899e9e0f";
+			};
+			name = Debug;
+		};
+		046B2FD71D643248003877AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0370CA2E456F49C2A153079 /* Pods-KalerKantho.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shafiul Biplob (YFQ2XML63B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Shafiul Biplob (YFQ2XML63B)";
+				INFOPLIST_FILE = KalerKantho/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aapbd.KalerKantho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "189f674d-f673-459b-ba92-d322899e9e0f";
+			};
+			name = Release;
+		};
+		046B2FD91D643248003877AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D0DD3C4DAAE4F5CCA1470C /* Pods-KalerKanthoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KalerKanthoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aapbd.KalerKanthoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KalerKantho.app/KalerKantho";
+			};
+			name = Debug;
+		};
+		046B2FDA1D643248003877AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2A2DC8B01E34356E1FB190 /* Pods-KalerKanthoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KalerKanthoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aapbd.KalerKanthoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KalerKantho.app/KalerKantho";
+			};
+			name = Release;
+		};
+		046B2FDC1D643248003877AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DFB2FEEFC094A6DB515ABF /* Pods-KalerKanthoUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = KalerKanthoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aapbd.KalerKanthoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KalerKantho;
+			};
+			name = Debug;
+		};
+		046B2FDD1D643248003877AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158C732C4BEB011F9806ED55 /* Pods-KalerKanthoUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = KalerKanthoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aapbd.KalerKanthoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KalerKantho;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		046B2FA81D643248003877AC /* Build configuration list for PBXProject "KalerKantho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046B2FD31D643248003877AC /* Debug */,
+				046B2FD41D643248003877AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046B2FD51D643248003877AC /* Build configuration list for PBXNativeTarget "KalerKantho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046B2FD61D643248003877AC /* Debug */,
+				046B2FD71D643248003877AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046B2FD81D643248003877AC /* Build configuration list for PBXNativeTarget "KalerKanthoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046B2FD91D643248003877AC /* Debug */,
+				046B2FDA1D643248003877AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		046B2FDB1D643248003877AC /* Build configuration list for PBXNativeTarget "KalerKanthoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				046B2FDC1D643248003877AC /* Debug */,
+				046B2FDD1D643248003877AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 046B2FA51D643248003877AC /* Project object */;
+}
